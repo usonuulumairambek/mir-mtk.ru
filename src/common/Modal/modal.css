@@ -1,0 +1,49 @@
+.modal {
+    z-index: 98;
+    padding: 15px;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    position: relative;
+    
+}
+
+.modal__content {
+    z-index: 99;
+    padding: 15px;
+    max-width: 500px;
+    min-height: 250px;
+    background: white;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    border-radius: 10px;
+}
+
+.modal__content p {
+    margin: 0 10px 20px;
+    text-align: left;
+    line-height: 1.3em;
+        
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal__close {
+    cursor: pointer;
+    display: block;
+    width: min-content;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;    
+    margin-bottom: 15px;    
+}
+
+.close__icon {
+    width: 15px;
+    height: 15px;
+}

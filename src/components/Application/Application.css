@@ -1,0 +1,95 @@
+.application{
+    display: flex;
+    flex-direction: row;
+    background:#115a9d ;
+    margin-right: 22px;
+    min-height: 600px;
+    position: relative;
+ 
+}
+
+
+
+.form-wrapper {
+    width: 50%;
+    color: white;
+    padding: 6%   ;
+    box-sizing: border-box;
+}
+
+
+.form-img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: url("./img/1.jpg");
+    background-size: cover;
+    border: none;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+.application-title {
+    font-size: calc(18px + 24 * (100vw/1920));
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.application-text {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.form-wrapper form {
+    padding: 60px;
+    background: white;
+}
+
+.form-wrapper form input {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    border: none;
+    background: #edf4f6;
+    padding: 15px;
+}
+
+.blueBtn {
+    border: none;
+    background: #115A9D;
+    color: white;
+    padding: 15px 20px;
+}
+
+@media (max-width:996px) {
+    .form-img {
+        display: none;
+    }
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .application {
+        margin-right: 0;
+    }
+    .form-wrapper {
+        padding: 9%   ;
+        
+    }
+    .form-wrapper form {
+        padding: 10%;
+        background: white;
+    }
+    .application-text {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+    
+}

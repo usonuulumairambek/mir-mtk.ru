@@ -1,0 +1,46 @@
+.Plans__title {
+  margin: 0 auto 20px;
+}
+
+.Plans__wrapper1, .Plans__wrapper2 {
+  display: flex;
+}
+
+.Plans__wrapper2 {
+  flex-direction: row-reverse;
+}
+
+.Plans__col {
+  height: 350px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+.PlansImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.plan__text {
+  margin: 0 20px;
+  font-size: calc(16px + 8 * (100vw/1920));
+}
+
+@media (max-width: 992px) {
+  .Plans__wrapper2, .Plans__wrapper1 {
+    flex-direction: column-reverse;
+  }
+  .Plans__col {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+  }
+}
